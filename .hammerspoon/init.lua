@@ -1,34 +1,25 @@
---  Toggle opening and closing kitty with a hotkey
--- from: https://github.com/kovidgoyal/kitty/issues/45#issuecomment-568920629
+-- Toggle opening and closing kitty and finder with a hotkey
+-- Inspo from: https://github.com/kovidgoyal/kitty/issues/45#issuecomment-568920629
+
+local function toggleApp(name, menuItem)
+    local app = hs.application.get(name)
+    if app then
+        if not app:mainWindow() then
+            app:selectMenuItem(menuItem)
+        elseif app:isFrontmost() then
+            app:hide()
+        else
+            app:activate()
+        end
+    else
+        hs.application.launchOrFocus(name)
+    end
+end
 
 hs.hotkey.bind({"ctrl"}, "space", function()
-    local app = hs.application.get("kitty")
-    if app then
-        if not app:mainWindow() then
-            app:selectMenuItem({"kitty", "New OS window"})
-        elseif app:isFrontmost() then
-            app:hide()
-        else
-            app:activate()
-        end
-    else
-        hs.application.launchOrFocus("kitty")
-    end
+    toggleApp("kitty", {"kitty", "New OS window"})
 end)
 
--- Toggle opening and closing finder with a hotkey as well
-
 hs.hotkey.bind({"ctrl"}, "f", function()
-    local app = hs.application.get("Finder")
-    if app then
-        if not app:mainWindow() then
-            app:selectMenuItem({"File", "New Finder Window"})
-        elseif app:isFrontmost() then
-            app:hide()
-        else
-            app:activate()
-        end
-    else
-        hs.application.launchOrFocus("Finder")
-    end
+    toggleApp("Finder", {"File", "New Finder Window"})
 end)

@@ -38,7 +38,7 @@ success_symbol = '[✔ ](bold green)'
 disabled = false
 
 [time]
-format = '\[[ $time]($style)\]'
+format = '([\[ $time\]]($style))'
 style = 'yellow'
 disabled = false
 

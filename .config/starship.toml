@@ -1,11 +1,12 @@
+right_format = """$status"""
+
 format = """
 $username\
 $hostname\
+$time $cmd_duration\
 $directory\
-$fill $cmd_duration $status\
 $all\
 $line_break\
-$time \
 $character"""
 
 [character]
@@ -14,25 +15,39 @@ error_symbol = '[λ](bold red)'
 
 [username]
 format = '[$user]($style)'
+style_user = 'cyan'
+style_root = 'cyan'
 show_always = true
 disabled = false
 
 [hostname]
-ssh_only = false
-format = '[$ssh_symbol](bold blue) in [$hostname](bold red) '
+format = ' in [$hostname](bold red) '
 trim_at = 'local.'
+ssh_only = false
 disabled = false
 
-[time]
-format = '[$time]($style)'
-style = 'bold white'
-disabled = false
+[directory]
+truncation_symbol = './'
+truncation_length = 4
+read_only = ' '
+style = 'yellow'
 
 [status]
-symbol = '[✖ ](bold red)'
+symbol = '[✗ ](bold red)'
 success_symbol = '[✔ ](bold green)'
 disabled = false
 
+[time]
+format = '\[[ $time]($style)\]'
+style = 'yellow'
+disabled = false
+
+[line_break]
+disabled = false
+
+[jobs]
+disabled = true
+
 [fill]
-symbol = '•'
-style = 'grey'
+# symbol = '•'
+# style = 'grey'

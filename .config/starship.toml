@@ -1,14 +1,21 @@
-right_format = """$status"""
+## ░█▀▀░▀█▀░█▀█░█▀▄░█▀▀░█░█░▀█▀░█▀█
+## ░▀▀█░░█░░█▀█░█▀▄░▀▀█░█▀█░░█░░█▀▀
+## ░▀▀▀░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░░
 
+# config by: Javier Zaleta Martínez (@jzaleta)
+
+# Setups
+right_format = """$status$cmd_duration"""
 format = """
 $username\
 $hostname\
-$time $cmd_duration\
+$time\
 $directory\
 $all\
 $line_break\
 $character"""
 
+# Prompt symbols 
 [character]
 success_symbol = '[λ](bold green)'
 error_symbol = '[λ](bold red)'
@@ -38,9 +45,15 @@ success_symbol = '[✔ ](bold green)'
 disabled = false
 
 [time]
-format = '([\[ $time\]]($style))'
+format = '([\[ $time\] ]($style))'
 style = 'yellow'
 disabled = false
+
+[cmd_duration]
+min_time = 1
+format = '[⏱ $duration]($style)'
+disabled = false
+style = "yellow"
 
 [line_break]
 disabled = false
@@ -48,6 +61,6 @@ disabled = false
 [jobs]
 disabled = true
 
-[fill]
+# [fill]
 # symbol = '•'
 # style = 'grey'

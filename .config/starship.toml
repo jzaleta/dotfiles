@@ -5,7 +5,7 @@
 # config by: Javier Zaleta Martínez (@jzaleta)
 
 # Setups
-right_format = """$status$cmd_duration"""
+right_format = """$cmd_duration$status"""
 format = """
 $username\
 $hostname\
@@ -21,28 +21,24 @@ success_symbol = '[λ](bold green)'
 error_symbol = '[λ](bold red)'
 
 [username]
-format = '[$user]($style)'
+format = '[\[ $user\]]($style)'
 style_user = 'cyan'
 style_root = 'cyan'
 show_always = true
 disabled = false
 
 [hostname]
-format = ' in [$hostname](bold red) '
+format = ' in [\[󱄅 $hostname\]](bold red) '
 trim_at = 'local.'
 ssh_only = false
 disabled = false
 
 [directory]
+format = '[](fg:yellow)[$path]($style)'
+style = 'yellow'
 truncation_symbol = './'
 truncation_length = 4
 read_only = ' '
-style = 'yellow'
-
-[status]
-symbol = '[✗ ](bold red)'
-success_symbol = '[✔ ](bold green)'
-disabled = false
 
 [time]
 format = '([\[ $time\] ]($style))'
@@ -50,10 +46,16 @@ style = 'yellow'
 disabled = false
 
 [cmd_duration]
+format = 'took [$duration]($style) '
+style = 'yellow'
 min_time = 1
-format = '[⏱ $duration]($style)'
 disabled = false
-style = "yellow"
+
+[status]
+format = '[$symbol$status]($style) '
+symbol = '[✖ ](bold red)'
+success_symbol = '[✔ ](bold green)'
+disabled = false
 
 [line_break]
 disabled = false

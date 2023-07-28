@@ -17,8 +17,8 @@ $character"""
 
 # Prompt symbols 
 [character]
-success_symbol = '[λ](bold green)'
-error_symbol = '[λ](bold red)'
+success_symbol = '[λ ](bold green)[->](bold green) [Shell](bold yellow) [\$](bold yellow)'
+error_symbol = '[λ ](bold red)[->](bold red) [Shell](bold yellow) [\$](bold yellow)'
 
 [username]
 format = '[\[ $user\]]($style)'

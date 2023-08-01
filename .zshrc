@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -107,14 +107,59 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#-------------------------------------------------------------------------------
+# My zsh aliases
+#-------------------------------------------------------------------------------
+
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Common dirs shortcuts
+alias home="cd ~"
+alias docs="cd ~/Documents"
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias p="cd ~/Projects"
+
+# System aliases
+alias c="clear"
+alias x="exit"
+
+# Quick edit to my zshrc config
+alias zshrc="code ~/.zshrc"
+
+# ls stuff, managed with exa
+alias ls="exa -lahF --icons"
+alias ll="exa -lahF"
+
+# Brew
 alias b="brew"
+
+# Neovim
+alias v="nvim"
 alias vim="nvim"
+
+# Git 
+alias add="git add"
+alias commit="git commit"
+alias pull="git pull"
+alias push="git push"
+alias g="lazygit"
+
+#-------------------------------------------------------------------------------
+# Source Homebrew zsh plugins
+#-------------------------------------------------------------------------------
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
+
+# Neofetch init
+neofetch
 
 # Starship prompt init
 eval "$(starship init zsh)"
-
-# Custom plugins
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
-source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh

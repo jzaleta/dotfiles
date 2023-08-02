@@ -34,7 +34,7 @@ ssh_only = false
 disabled = false
 
 [directory]
-format = '[](fg:yellow)[$path]($style)'
+format = '[ ](fg:yellow)[$path]($style) '
 style = 'yellow'
 truncation_symbol = './'
 truncation_length = 4

@@ -1,11 +1,15 @@
 # 🌌 Space
 
-![](astronaut-with-jellyfish.jpeg)
+![](webb/carina-nebula.jpeg)
 
-![](cosmic-cliffs.jpg)
+![](webb/cosmic-cliffs.jpg)
 
-![](gruvbox-astronaut.png)
+![](webb/southern-ring-nebula.jpg)
 
-![](southern-ring-nebula.jpg)
+![](webb/stephans-quintet.jpg)
 
-![](stephans-quintet.jpg)
+![](animated/astronaut-endeavour.png)
+
+![](animated/astronaut-with-jellyfish.jpeg)
+
+![](animated/gruvbox-astronaut.png)

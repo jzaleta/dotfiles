@@ -20,6 +20,9 @@ echo "Setting up your Mac..."
 # Check for Oh My Zsh and install it if not present
 if test ! $(which omz); then
     /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+    success "Oh My Zsh installed!"
+else
+    echo "Oh My Zsh already installed, skipping step..."    
 fi
 
 # Check for Homebrew and install it if not present
@@ -28,6 +31,9 @@ if test ! $(which brew); then
 
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    success "Homebrew installed!"
+else
+    echo "Homebrew already installed, skipping step..."    
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles folder

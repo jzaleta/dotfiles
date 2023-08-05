@@ -1,4 +1,4 @@
-# 🍙 Javier's config
+# 🍙 Javier's dotfiles
 ### My config files for macOS/NixOS: 
 - Brew, Zsh, Starship, Nix, Vscode, etc.
 > There's no place like ~/
@@ -14,6 +14,10 @@
 
 ---
 ## 🛠️ Configuration
+
+> ⚠️ **Note**: You are expected to have a basic understanding of the unix system. 
+
+This configuration was made for my own setup, so some things might not work for you. Feel free to go through the files in this repo and tweak everything to your liking! Just remember to create a backup of your dotfiles (if any). 
 
 **Install instructions:**
 

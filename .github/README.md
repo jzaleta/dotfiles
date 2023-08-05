@@ -1,5 +1,11 @@
 # 🏠 Javier's .dotfiles / config
+
 > There's no place like ~/
+
+<div align="center">
+![](assets/prompt.png)
+
+</div>
 
 <!-- BADGES -->
 <div align="center">

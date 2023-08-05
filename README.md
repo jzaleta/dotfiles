@@ -13,3 +13,20 @@
 </div>
 
 ---
+## 🛠️ Configuration
+
+**Install instructions:**
+
+1. Clone my dotfiles repo to `~/.dotfiles` with:
+
+```sh
+git clone https://github.com/jzaleta/dotfiles ~/.dotfiles
+```
+
+2. Run the installation setup script with:
+
+```sh
+cd ~/.dotfiles && ./setup.sh
+```
+
+> Enjoy your new dotfiles!

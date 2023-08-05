@@ -20,9 +20,6 @@ echo "Setting up your Mac..."
 # Check for Oh My Zsh and install it if not present
 if test ! $(which omz); then
     /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
-    success "Oh My Zsh installed!"
-else
-    echo "Oh My Zsh already installed, skipping step..."    
 fi
 
 # Check for Homebrew and install it if not present
@@ -31,14 +28,7 @@ if test ! $(which brew); then
 
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
-    success "Homebrew installed!"
-else
-    echo "Homebrew already installed, skipping step..."    
 fi
-
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles folder
-rm -rf $HOME/.zshrc
-ln -s .zshrc $HOME/.zshrc
 
 # Update Homebrew
 brew update
@@ -46,9 +36,6 @@ brew update
 # Install software and dependencies with bundle (checkout my Brewfile)
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
-
-# Symlink the Mackup config file to the home directory
-ln -s .mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos

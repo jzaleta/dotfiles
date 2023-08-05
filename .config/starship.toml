@@ -4,14 +4,12 @@
 
 # config by: Javier Zaleta Martínez (@jzaleta)
 
-
 # Setups
-right_format = """$cmd_duration"""
+right_format = """$cmd_duration$status"""
 format = """
 $username\
 $hostname\
 $time\
-$status\
 $directory\
 $all\
 $line_break\
@@ -19,8 +17,8 @@ $character"""
 
 # Prompt symbols 
 [character]
-success_symbol = '[λ ](bold green)[->](bold green) [Shell](bold yellow) [\$](bold yellow)'
-error_symbol = '[λ ](bold red)[->](bold red) [Shell](bold yellow) [\$](bold yellow)'
+success_symbol = '[λ ](bold green)[->](bold green) [Shell](bold yellow) [\$](yellow)'
+error_symbol = '[λ ](bold red)[->](bold red) [Shell](bold yellow) [\$](yellow)'
 
 [username]
 format = '[\[ $user\]]($style)'
@@ -48,16 +46,16 @@ style = 'yellow'
 disabled = false
 
 [cmd_duration]
-format = '[$duration]($style) '
+format = '[󰮯 $duration]($style) '
 style = 'yellow'
 min_time = 1
 disabled = false
 
 [status]
-format = '[\[$symbol$status\] ]($style)'
-symbol = '[✗ ](bold red)'
-success_symbol = '[✔ ](bold green)'
-style = 'yellow'
+format = '[$symbol$status]($style)'
+symbol = '[󰊠 ](bold red)'
+success_symbol = '[󰊠 ](bold green)'
+style = 'red'
 disabled = false
 
 [line_break]
@@ -66,6 +64,6 @@ disabled = false
 [jobs]
 disabled = true
 
-# [fill]
-# symbol = '•'
-# style = 'grey'
+[fill]
+symbol = ' '
+style = 'grey'

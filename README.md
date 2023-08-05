@@ -1,6 +1,4 @@
-# 🍙 Javier's dotfiles
-### My config files for macOS/NixOS: 
-- Brew, Zsh, Starship, Nix, Vscode, etc.
+# 🏠 Javier's .dotfiles
 > There's no place like ~/
 
 <!-- BADGES -->
@@ -12,25 +10,21 @@
 
 </div>
 
----
+My dotfiles include *zsh*, *brew*, *starship*, *vscode*, *nix*, *(n)vim* and *more* config files (stashed away in case of laptop armageddon).
+
+This configuration was made for my personal setup so some things might not work for you out-of-the-box. Feel free to go through the files in this repo and tweak everything to your liking! Just remember to create first a backup of your dotfiles (if any). 
+
 ## 🛠️ Configuration
 
-> ⚠️ **Note**: You are expected to have a basic understanding of the unix system. 
-
-This configuration was made for my own setup, so some things might not work for you. Feel free to go through the files in this repo and tweak everything to your liking! Just remember to create a backup of your dotfiles (if any). 
+> ⚠️ **Note**: Dotfiles are all the hidden settings and configuration files you have on your Unix system. You are expected to have a basic understanding of the unix system before starting.
 
 **Install instructions:**
 
-1. Clone my dotfiles repo to `~/.dotfiles` with:
-
+1. Clone my dotfiles repo with:
 ```sh
-git clone https://github.com/jzaleta/dotfiles ~/.dotfiles
+git clone https://github.com/jzaleta/dotfiles
 ```
 
-2. Run the installation setup script with:
+2. Run the [`setup.sh`](setup.sh) script inside your `$HOME` directory to install Oh-My-ZSH, Homebrew and apply my macOS settings!
 
-```sh
-cd ~/.dotfiles && ./setup.sh
-```
-
-> Enjoy your new dotfiles!
+3. Enjoy your new dotfiles!

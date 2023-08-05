@@ -2,12 +2,6 @@
 
 > There's no place like ~/
 
-<div align="center">
-  
-![](assets/prompt.png)
-
-</div>
-
 <!-- BADGES -->
 <div align="center">
   
@@ -17,7 +11,19 @@
 
 </div>
 
-My dotfiles include *zsh*, *brew*, *starship*, *vscode*, *kitty*, *nix*, *(n)vim* and *more* config files (stashed away in case of laptop armageddon).
+## 🌿 About
+
+<div align="center">
+  
+My dotfiles include *zsh*, *brew*, *starship*, *vscode*, *kitty*, *nix*, *.macos*, *(n)vim* and *more* config files (stashed away in case of laptop armageddon).
+
+</div>
+
+<div align="center">
+  
+![](assets/prompt.png)
+
+</div>
 
 This configuration was made for my personal setup so some things might not work for you out-of-the-box. Feel free to go through the files in this repo and tweak everything to your liking! Just remember to create first a backup of your dotfiles (if any). 
 

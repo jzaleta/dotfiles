@@ -4,12 +4,14 @@
 
 # config by: Javier Zaleta Martínez (@jzaleta)
 
+
 # Setups
-right_format = """$cmd_duration$status"""
+right_format = """$cmd_duration"""
 format = """
 $username\
 $hostname\
 $time\
+$status\
 $directory\
 $all\
 $line_break\
@@ -46,15 +48,16 @@ style = 'yellow'
 disabled = false
 
 [cmd_duration]
-format = 'took [$duration]($style) '
+format = '[$duration]($style) '
 style = 'yellow'
 min_time = 1
 disabled = false
 
 [status]
-format = '[$symbol$status]($style) '
-symbol = '[✖ ](bold red)'
+format = '[\[$symbol$status\] ]($style)'
+symbol = '[✗ ](bold red)'
 success_symbol = '[✔ ](bold green)'
+style = 'yellow'
 disabled = false
 
 [line_break]

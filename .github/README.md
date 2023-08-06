@@ -42,7 +42,7 @@ This configuration was made for my personal setup so some things might not work 
 | Package Manager      | [`homebrew`](https://github.com/Homebrew/brew) and [`nix`](https://github.com/NixOS/nixpkgs) |
 | Window Manager       | [`rectangle`](https://github.com/rxhanson/Rectangle) |
 | Terminal             | [`kitty`](https://github.com/kovidgoyal/kitty) |
-| Shell                | [`zsh`](https://www.zsh.org/) |
+| Shell                | [`zsh`](https://www.zsh.org/) with [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh) |
 | Editor               | [`vscode`](https://github.com/microsoft/vscode) and [`neovim`](https://github.com/neovim/neovim) |
 | Prompt               | [`starship`](https://github.com/starship/starship) |
 
@@ -85,7 +85,7 @@ git clone https://github.com/jzaleta/dotfiles ~/.dotfiles
 
 **2. Now, inside $HOME:**
 
-- Move the things you'll use.
+- Move the things to their correct location
 > If manually shifting everything to where it's meant to be originally isn't your thing, you can just use symlinks. ¯\_(ツ)_/¯
 
 - Run the [setup.sh](https://github.com/jzaleta/dotfiles/blob/main/setup.sh) script to install Oh-My-ZSH, the apps I use from the Brewfile and apply my custom macOS settings!

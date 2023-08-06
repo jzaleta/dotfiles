@@ -1,4 +1,4 @@
-# 🏠 Javier's .dotfiles / config
+# 🏠 Javier's .dotfiles
 
 > There's no place like ~/
 
@@ -50,18 +50,32 @@ This configuration was made for my personal setup so some things might not work 
 
 ## 🛠️ Configuration
 
-> ⚠️ **Note**: Dotfiles are all the hidden settings and configuration files you have on your Unix system. You are expected to have a basic understanding of the unix system before starting.
+> ⚠️ **Note**: Dotfiles are all the hidden settings and configuration files you have on your Unix system. You are expected to have a basic understanding of the unix system before starting to work with dotfiles.
 
-**Install instructions:**
+At first I wanted to use a manager tool for my dotfiles, but now, even though I tend to overthink, I've switched to another way to keep things easy peasy:
 
-1. Clone my dotfiles repo with:
+I have a dedicated directory named ```~/dotfiles``` residing comfortably within the ```$HOME``` directory. It acts as a sort of command center for all my configs under the watchful eye of Git.
+
+From there, I transfer my config files to ```$HOME```, preventing me from Git-ifying my entire ```$HOME``` (There was this one accidental time I did that but let's not delve into that story).
+
+Anyway, by using this method, I can smoothly manage everything across different devices and even create a fresh setup if needed (because you never know when your machine might decide to have a meltdown, trust me, it will happen one day).
+
+### TL;DR:
+
+**1. Clone my dotfiles repo to ~/.dotfiles with:**
 ```sh
-git clone https://github.com/jzaleta/dotfiles
+git clone https://github.com/jzaleta/dotfiles ~/.dotfiles
 ```
 
-2. Run the [`setup.sh`](setup.sh) script inside your `$HOME` directory to install Oh-My-ZSH, Homebrew and apply my macOS settings!
+**2. Now, inside $HOME:**
+- Move the things you'll use.
+> If manually shifting everything to where it's meant to be originally isn't your thing, you can just use symlinks. ¯\_(ツ)_/¯
 
-3. Enjoy your new dotfiles!
+- Run the [setup.sh](https://github.com/jzaleta/dotfiles/blob/main/setup.sh) script inside your $HOME directory to install Oh-My-ZSH, Homebrew and apply my macOS settings!
+
+**3. Enjoy your new dotfiles!**
+   
+
    
 ## 💻 Applications
 

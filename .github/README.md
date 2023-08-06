@@ -60,18 +60,20 @@ From there, I transfer my config files to ```$HOME```, preventing me from Git-if
 
 Anyway, by using this method, I can smoothly manage everything across different devices and even create a fresh setup if needed (because you never know when your machine might decide to have a meltdown, trust me, it will happen one day).
 
-### TL;DR
+### TL;DR (Just follow the manual ↓)
 
 #### Prerequisites:
 
 Before using these dotfiles there are a few things you'll need to install manually:
 
-- Your Mac needs git and Apple’s command-line developer tools.
-You will install these using Homebrew, which will also assist you later in setting up all the apps I use.
-
-> Install Homebrew with:
+- Install Homebrew and Apple’s command-line developer tools with:
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+- Install Git so you can clone this repo:
+```sh
+brew install git
 ```
 
 #### Install guide:

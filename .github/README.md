@@ -67,7 +67,7 @@ Anyway, by using this method, I can smoothly manage everything across different 
 Before using these dotfiles there are a few things you'll need to install manually:
 
 - Your Mac needs git and Apple’s command-line developer tools.
-You will install these using Homebrew, which will also assist you in setting up all the apps I use.
+You will install these using Homebrew, which will also assist you later in setting up all the apps I use.
 
 > Install Homebrew with:
 ```sh

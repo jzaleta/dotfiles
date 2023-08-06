@@ -88,7 +88,7 @@ git clone https://github.com/jzaleta/dotfiles ~/.dotfiles
 - Move the things you'll use.
 > If manually shifting everything to where it's meant to be originally isn't your thing, you can just use symlinks. ¯\_(ツ)_/¯
 
-- Run the [setup.sh](https://github.com/jzaleta/dotfiles/blob/main/setup.sh) script to install Oh-My-ZSH, the apps I use through the Brewfile and apply my macOS settings!
+- Run the [setup.sh](https://github.com/jzaleta/dotfiles/blob/main/setup.sh) script to install Oh-My-ZSH, the apps I use from the Brewfile and apply my custom macOS settings!
 
 **3. Enjoy your new dotfiles!**
 

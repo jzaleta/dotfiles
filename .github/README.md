@@ -15,7 +15,7 @@
 
 <div align="center">
   
-My dotfiles include *zsh*, *brew*, *starship*, *vscode*, *kitty*, *nix*, *.macos*, *(n)vim* and *more* config files (stashed away in case of laptop armageddon).
+My dotfiles include *zsh*, *brew*, *starship*, *vscode*, *kitty*, *nix*, *.macos*, *(n)vim* and *more* config files, safeguarded just in case my laptop goes kaput or super smart AIs decide to take over the world, you know?
 
 </div>
 
@@ -25,9 +25,17 @@ My dotfiles include *zsh*, *brew*, *starship*, *vscode*, *kitty*, *nix*, *.macos
 
 </div>
 
+> Desktop preview ↑
+
 This configuration was made for my personal setup so some things might not work for you out-of-the-box. Feel free to go through the files in this repo and tweak everything to your liking! Just remember to create first a backup of your dotfiles (if any). 
 
 ## 🔍 Technical specifications
+
+**I'm a self-taught software engineer and a medical student, which means my workflow is a bit unconventional.**
+
+- I use both local tools on my computer for college and some projects and a virtual machine (Nix) that comes into play when dealing with specific development challenges.
+- It's a pretty cool mix of practicality and adaptability.
+- Definitely not something I could have tackled without overthinking and over-engineering).
 
 | Feature              | Package                                                 |
 | -------------------- | ------------------------------------------------------- |

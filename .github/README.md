@@ -21,7 +21,7 @@ My dotfiles include *zsh*, *brew*, *starship*, *vscode*, *kitty*, *nix*, *.macos
 
 <div align="center">
   
-![](assets/prompt.png)
+![](assets/setup.png)
 
 </div>
 

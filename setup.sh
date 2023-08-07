@@ -31,6 +31,7 @@ brew bundle --file "$HOME/Brewfile"
 
 # Create symbolic links for dotfiles
 ln -s "$HOME/.dotfiles/.config/zsh/.zshrc" "$HOME/.zshrc"
+ln -s "$HOME/.dotfiles/.config/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$HOME/.dotfiles/.config/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
 ln -s "$HOME/.dotfiles/.config/starship/starship.toml" "$HOME/.config/starship.toml"
 ln -s "$HOME/.dotfiles/.hammerspoon/init.lua" "$HOME/.hammerspoon/init.lua"

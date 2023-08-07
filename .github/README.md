@@ -56,7 +56,7 @@ At first I wanted to use a manager tool for my dotfiles, but now, because I tend
 
 I have a dedicated directory named ```~/dotfiles``` residing comfortably within the ```$HOME``` directory. It acts as a sort of command center for all my configs under the watchful eye of Git.
 
-From there, I transfer my config files to ```$HOME```, preventing me from Git-ifying my entire ```$HOME``` (There was this one accidental time I did that but let's not delve into that story).
+Afterward, I transfer my config files to ```$HOME``` through the setup of symbolic links, ensuring that I don't Git-ify my entire ```$HOME``` (There was this one accidental time I did that but let's not delve into that story).
 
 Anyway, by using this method, I can smoothly manage everything across different devices and even create a fresh setup if needed (because you never know when your machine might decide to have a meltdown, trust me, it will happen one day).
 
@@ -85,10 +85,8 @@ git clone https://github.com/jzaleta/dotfiles ~/.dotfiles
 
 **2. Now, inside $HOME:**
 
-- Move the things to their correct location
-> If manually shifting everything to where it's meant to be originally isn't your thing, you can just use symlinks. ¯\_(ツ)_/¯
-
-- Run the [setup.sh](https://github.com/jzaleta/dotfiles/blob/main/setup.sh) script to install Oh-My-ZSH, the apps I use from the Brewfile and apply my custom macOS settings!
+- To finish getting everything up and running, simply execute the [setup.sh](https://github.com/jzaleta/dotfiles/blob/main/setup.sh) script. This will take care of installing the apps I depend on from my Brewfile, setting up the essential symbolic links and implementing my customized macOS settings!
+> If using symlinks to set up stuff isn't your thing, you can manually shift everything to where it's meant to be originally (but I don't recommend that) ¯\_(ツ)_/¯
 
 **3. Enjoy your new dotfiles!**
 

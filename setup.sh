@@ -22,22 +22,22 @@ if test ! $(which omz); then
     /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 fi
 
-# Check for Homebrew and install it if not present
-if test ! $(which brew); then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
 # Update Homebrew
 brew update
 
-# Install software and dependencies with bundle (checkout my Brewfile)
-brew tap homebrew/bundle
-brew bundle --file ./Brewfile
+# Install software and dependencies with bundle using my Brewfile
+ln -s "$HOME/.dotfiles/.config/Homebrew/Brewfile" "$HOME/Brewfile"
+brew bundle --file "$HOME/Brewfile"
 
-# Set macOS preferences - we will run this last because this will reload the shell
-source ./.macos
+# Create symbolic links for dotfiles
+ln -s "$HOME/.dotfiles/.config/zsh/.zshrc" "$HOME/.zshrc"
+ln -s "$HOME/.dotfiles/.config/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+ln -s "$HOME/.dotfiles/.config/starship/starship.toml" "$HOME/.config/starship.toml"
+ln -s "$HOME/.dotfiles/.hammerspoon/init.lua" "$HOME/.hammerspoon/init.lua"
+ln -s "$HOME/.dotfiles/wallpapers" "$HOME/Documents/Wallpapers"
+ln -s "$HOME/.dotfiles/macos/.macos" "$HOME/.macos"
+
+# Set macOS preferences from the new .macos file
+source "$HOME/.macos"
 
 echo "Setup completed!"

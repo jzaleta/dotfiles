@@ -26,15 +26,15 @@ fi
 brew update
 
 # Install software and dependencies with bundle using my Brewfile
-ln -s "$HOME/.dotfiles/.config/Homebrew/Brewfile" "$HOME/Brewfile"
+ln -s "$HOME/.dotfiles/Homebrew/Brewfile" "$HOME/Brewfile"
 brew bundle --file "$HOME/Brewfile"
 
-# Create symbolic links for dotfiles
-ln -s "$HOME/.dotfiles/.config/zsh/.zshrc" "$HOME/.zshrc"
-ln -s "$HOME/.dotfiles/.config/zsh/.zprofile" "$HOME/.zprofile"
-ln -s "$HOME/.dotfiles/.config/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
-ln -s "$HOME/.dotfiles/.config/starship/starship.toml" "$HOME/.config/starship.toml"
-ln -s "$HOME/.dotfiles/.hammerspoon/init.lua" "$HOME/.hammerspoon/init.lua"
+# Create symbolic links for the rest of my dotfiles
+ln -s "$HOME/.dotfiles/zsh/.zshrc" "$HOME/.zshrc"
+ln -s "$HOME/.dotfiles/zsh/.zprofile" "$HOME/.zprofile"
+ln -s "$HOME/.dotfiles/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+ln -s "$HOME/.dotfiles/starship/starship.toml" "$HOME/.config/starship.toml"
+ln -s "$HOME/.dotfiles/hammerspoon/init.lua" "$HOME/.hammerspoon/init.lua"
 ln -s "$HOME/.dotfiles/wallpapers" "$HOME/Documents/Wallpapers"
 ln -s "$HOME/.dotfiles/macos/.macos" "$HOME/.macos"
 
